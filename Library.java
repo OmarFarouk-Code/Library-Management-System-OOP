@@ -1,9 +1,15 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Library 
 {
     static int totalItemsCount;
     List<LibraryItem> inventory;
+
+    public Library ()
+    {
+        this.inventory = new ArrayList<>();
+    }
 
     public int findItem( String Title )
     {
