@@ -14,9 +14,9 @@ public class LibraryItem
     }
 
     //Getters and Setters
-    void getTitle ()
+    String getTitle ()
     {
-        System.out.println("The Title is : " + Title);
+        return Title;
     }
 
     void setTitle ( String InputtedTitle)
