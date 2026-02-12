@@ -1,5 +1,5 @@
 import java.util.List;
-
+import java.util.ArrayList;
 public class Member extends User
 {
    private List<LibraryItem> borrowedItems; 
@@ -7,6 +7,7 @@ public class Member extends User
    public Member (String name , String UserID)
    {
         super( name , UserID ); 
+        this.borrowedItems = new ArrayList<>();
    }
 
    public void borrowItem (LibraryItem Item)

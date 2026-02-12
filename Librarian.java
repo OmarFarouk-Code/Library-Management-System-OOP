@@ -7,11 +7,10 @@ public class Librarian extends User
         super( name , UserID);
     }
 
-    void addItem(Library Library , LibraryItem Item)
+    void addItem(Library Library, LibraryItem Item) 
     {
         Library.inventory.add(Item);
-        System.out.println("New item added to inventory ");
-        Item.getTitle();
+        System.out.println("New item added: " + Item.getTitle()); 
     }
 
     void removeItem(Library Library , int ID)
