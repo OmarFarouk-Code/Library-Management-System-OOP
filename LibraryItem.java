@@ -24,6 +24,11 @@ public class LibraryItem
         Title = InputtedTitle;
     }
 
+    String getID ()
+    {
+        return Id;
+    }
+
     void getAvailabilty ()
     {
         if ( Available == true ) 
