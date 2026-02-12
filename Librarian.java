@@ -7,21 +7,21 @@ public class Librarian extends User
         super( name , UserID);
     }
 
-    void addItem(LibraryItem Item)
+    void addItem(Library Library , LibraryItem Item)
     {
-        inventory.add(Item);
+        Library.inventory.add(Item);
         System.out.print("New item added to inventory: ");
         Item.getTitle();
     }
 
-    void removeItem(String ID)
+    void removeItem(Library Library , int ID)
     {
         boolean found = false;
-        for (int i = 0 ; i < inventory.size() ; i++)
+        for (int i = 0 ; i < Library.inventory.size() ; i++)
         {
-            if (inventory.get(i).getID() ==  ID)
+            if (Library.inventory.get(i).getID() ==  ID)
             {
-                inventory.remove(i);
+                Library.inventory.remove(i);
                 System.out.println("Item " + ID + " has been deleted from the system.");
                 found = true;
             break;
