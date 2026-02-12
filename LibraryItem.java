@@ -49,7 +49,7 @@ public class LibraryItem
     void DisplayDetails ()
     {
         System.out.println("ID : " + Id);
-        getTitle();
-        getAvailabilty();
+        System.out.println("Title : " + Title);
+        
     }
 }

@@ -10,7 +10,7 @@ public class Librarian extends User
     void addItem(Library Library , LibraryItem Item)
     {
         Library.inventory.add(Item);
-        System.out.print("New item added to inventory: ");
+        System.out.println("New item added to inventory ");
         Item.getTitle();
     }
 
