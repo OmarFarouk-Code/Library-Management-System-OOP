@@ -2,12 +2,12 @@
 public class LibraryItem 
 {
     //Private Variables
-    private String Id;
+    private int Id;
     private String Title;
     private boolean Available;
 
     //Constructor
-    public LibraryItem(String Id , String Title)
+    public LibraryItem(int Id , String Title)
     {
         this.Id = Id;
         this.Title = Title;
@@ -24,7 +24,7 @@ public class LibraryItem
         Title = InputtedTitle;
     }
 
-    String getID ()
+    int getID ()
     {
         return Id;
     }

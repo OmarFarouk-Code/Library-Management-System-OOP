@@ -4,7 +4,7 @@ public class Book extends LibraryItem
     private int pageCount;
     private String ISBN;
 
-    public Book (String Id , String Title , String author ,int pageCount, String ISBN)
+    public Book (int Id , String Title , String author ,int pageCount, String ISBN)
     {
         super(Id , Title);
         this.author = author;

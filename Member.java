@@ -16,7 +16,7 @@ public class Member extends User
         Item.getTitle();
    }
 
-   public void returnItem (String id)
+   public void returnItem (int id)
    {
         for (int i = 0 ; i < borrowedItems.size() ; i++ )
         {

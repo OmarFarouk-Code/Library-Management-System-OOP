@@ -3,7 +3,7 @@ public class Magazine extends LibraryItem
     private int issueNumber;
     private String publicationDate;
 
-    public Magazine(String Id , String Title , int issueNumber , String publicationDate )
+    public Magazine(int Id , String Title , int issueNumber , String publicationDate )
     {
         super(Id ,Title);
         this.issueNumber = issueNumber;
